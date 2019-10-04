@@ -1,0 +1,9 @@
+# The following types define the data model of the example service
+# based on which the GraphQL API is generated
+
+type Chat @model {
+  id: ID! @isUnique
+  from: String!
+  content: String!
+  createdAt: DateTime!
+}
